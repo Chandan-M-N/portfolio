@@ -10970,3 +10970,132 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+/* Common Styles */
+.frameworks, .concepts, .soft-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.framework-item, .concept-item, .soft-skill-item {
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.framework-item:hover, .concept-item:hover, .soft-skill-item:hover {
+  transform: scale(1.1);
+  background-color: #dfe6e9;
+}
+
+.framework-item i, .concept-item i, .soft-skill-item i {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #2d3436;
+  transition: color 0.3s;
+}
+
+.framework-item:hover i, .concept-item:hover i, .soft-skill-item:hover i {
+  color: #0984e3;
+}
+
+.framework-item span, .concept-item span, .soft-skill-item span {
+  font-size: 16px;
+  color: #2d3436;
+  display: block;
+}
+
+.framework-item:hover span, .concept-item:hover span, .soft-skill-item:hover span {
+  color: #0984e3;
+}
+
+/* Customization per Section */
+.framework-item {
+  background-color: #d9f7f2;
+}
+
+.concept-item {
+  background-color: #e9f7e2;
+}
+
+.soft-skill-item {
+  background-color: #f9e2e2;
+}
+
+/* Hover effects for Concepts and Soft Skills */
+.concept-item:hover, .soft-skill-item:hover {
+  transform: scale(1.05);
+  background-color: #f3f3f3; /* Lighter hover color */
+  box-shadow: none; /* Remove shadow for non-clickable items */
+}
+
+.concept-item, .soft-skill-item {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+/* Programming Languages Styles */
+.dev-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.language-item {
+  text-align: center;
+  font-size: 17px;
+  color: #2d3436;
+  transition: transform 0.3s ease, color 0.3s ease;
+  padding-top: 5px;
+  display: block;
+  margin-top: 10px;
+}
+
+.language-item:hover {
+  transform: scale(1.1);
+  color: #0984e3; /* Change text color on hover */
+}
+
+/* Styling for the icons */
+.dev-icons .list-inline-item {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px; /* Rounded corners for the boxes */
+  background-color: #f2f2f2; /* Soft gray background for the boxes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 120px; /* Increased width */
+  height: 150px; /* Increased height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hover effect for boxes */
+.dev-icons .list-inline-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .dev-icons {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .list-inline-item {
+      margin: 10px 0;
+      width: 120px; /* Adjust width for smaller screens */
+      height: 150px; /* Maintain height */
+  }
+}
