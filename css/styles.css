@@ -11187,7 +11187,7 @@ h2.mb-5 {
 
 .job-details h3 {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.8rem; /* size for exp heading */
   font-weight: bold;
 }
 
@@ -11197,7 +11197,7 @@ h2.mb-5 {
 }
 
 .date {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #888;
 }
@@ -11271,5 +11271,96 @@ h2.mb-5 {
 
   .job-details {
       text-align: left;
+  }
+}
+
+
+/* Education Section */
+.education-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.education-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.university-logo img {
+  max-width: 100%;  /* Ensures the image doesn't exceed its container width */
+  height: auto;     /* Maintains the aspect ratio */
+  width: 100px;     /* Set a fixed width as an example */
+}
+
+
+
+.education-details {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.education-details h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.gpa {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #28a745;  /* Green color for GPA */
+}
+
+.coursework-list {
+  padding-left: 20px;
+  list-style-type: square;
+}
+
+.coursework-list li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.education-date {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #888;
+}
+
+/* Customizing for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .education-item {
+      flex-direction: column;
+  }
+
+  .education-header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .university-logo img {
+      margin-bottom: 10px;
+  }
+
+  .education-details {
+      margin-left: 0;
   }
 }
