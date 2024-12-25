@@ -11143,7 +11143,7 @@ h2.mb-5 {
 
 .job-container {
   padding: 20px;
-  background-color: #fff;
+  background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -11164,10 +11164,6 @@ h2.mb-5 {
 
 .job-container:hover .job-details h3 {
   color: #0056b3; /* Change job title color on hover */
-}
-
-.job-container:hover .job-description {
-  color: #555; /* Slight change in text color for description */
 }
 
 .job-header {
@@ -11332,11 +11328,13 @@ h2.mb-5 {
 .coursework-list {
   padding-left: 20px;
   list-style-type: square;
+  color: #555;
 }
 
 .coursework-list li {
   font-size: 1rem;
   margin-bottom: 5px;
+  color: #555;
 }
 
 .education-date {
@@ -11364,3 +11362,105 @@ h2.mb-5 {
       margin-left: 0;
   }
 }
+
+
+/* projects */
+
+/* Styling for the Projects Section */
+.projects-container {
+  display: flex;
+  flex-direction: column; /* Stack the project items vertically */
+  align-items: flex-start; /* Align items to the left */
+  padding-left: 20px; /* Optional: add some padding to left */
+  padding-right: 20px; /* Optional: add some padding to right */
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 30px; /* Space between each project card */
+  overflow: hidden;
+  width: 100%; /* Ensure all cards are the same width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+  display: flex;
+  align-items: flex-start;  /* Align header content to the left */
+  justify-content: flex-start; /* Ensure left alignment */
+  width: 100%;
+}
+
+.project-icon {
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+/* Project title should stay left-aligned */
+.project-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  text-align: left; /* Force text to align left */
+  margin: 0; /* Remove any default margin */
+  width: 100%; /* Ensure the title takes up the full width */
+}
+
+.project-content {
+  padding-left: 10px; /* Space between the title and content */
+  width: 100%;
+}
+
+.project-date {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #888;
+}
+
+.project-description {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #333;
+
+}
+
+.project-features {
+  padding-left: 20px;
+  list-style-type: square;
+  margin-top: 10px;
+  color: #333;
+
+}
+
+.project-features li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+/* Hover effect on icons */
+.project-card:hover .project-icon {
+  color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-container {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .project-card {
+    margin-bottom: 20px; /* Reduce margin on smaller screens */
+  }
+}
+

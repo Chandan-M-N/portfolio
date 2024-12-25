@@ -254,55 +254,78 @@
             </section>
             <hr class="m-0" />
             <!-- Projects-->
+            
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Projects</h2>
-                    <ul class="fa-ul mb-0 mt-4">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-project-diagram text-primary"></i></span>
-                            <strong>ckks-engine</strong> | December 2024
-                            <br>
-                            Developed ckks-engine, a Rust crate implementing the CKKS (Cheon-Kim-Kim-Song) homomorphic encryption scheme. Key features include:
-                            <ul>
+                    <div class="projects-container"> <!-- Container for the projects -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <span class="project-icon"><i class="fas fa-project-diagram text-primary"></i></span>
+                                <div class="project-title">ckks-engine <a href="https://crates.io/crates/ckks-engine" target="_blank">[crate]</a></div>
+                                <div class="project-date">December 2024</div>
+                            </div>
+                            <div class="project-description">
+                                Developed `ckks-engine`, a Rust crate implementing the CKKS (Cheon-Kim-Kim-Song) homomorphic encryption scheme.
+                            </div>
+                            <ul class="project-features">
                                 <li>Enabled computations on encrypted real numbers and strings while preserving privacy.</li>
                                 <li>Supported arithmetic operations (addition, subtraction, multiplication, etc.) and string manipulations with approximate encryption.</li>
                                 <li>Optimized for privacy-focused applications requiring mathematical operations on sensitive data.</li>
                             </ul>
-                        </li>
-                        <li class="mt-3">
-                            <span class="fa-li"><i class="fas fa-project-diagram text-primary"></i></span>
-                            <strong>Secure Software Execution and Licensing Framework</strong> | August 2024
-                            <br>
-                            Developed a secure licensing framework leveraging Trusted Platform Module (TPM) to ensure software integrity and data security. Key features include:
-                            <ul>
-                                <li>RSA Key Management: Encrypted software for secure transmission and decrypted it using memory-resident execution via Linux tmpfs to prevent disk-based attacks.</li>
-                                <li>User Verification and Expiration: Implemented robust licensing with user authentication and controlled software usage.</li>
-                                <li>Namespace Isolation: Protected sensitive operations using private namespaces, ensuring visibility only to authorized users.</li>
+                        </div>
+            
+                        <div class="project-card">
+                            <div class="project-header">
+                                <span class="project-icon"><i class="fas fa-project-diagram text-primary"></i></span>
+                                <div class="project-title">Secure Software Execution and Licensing Framework</div>
+                                <div class="project-date">August 2024</div>
+                            </div>
+                            <div class="project-description">
+                                Developed a secure licensing framework leveraging Trusted Platform Module (TPM) to ensure software integrity and data security.
+                            </div>
+                            <ul class="project-features">
+                                <li>Encrypted software for secure transmission and decrypted it using memory-resident execution via Linux tmpfs to prevent disk-based attacks.</li>
+                                <li>Implemented robust licensing with user authentication and controlled software usage.</li>
+                                <li>Protected sensitive operations using private namespaces, ensuring visibility only to authorized users.</li>
                             </ul>
-                        </li>
-                        <li class="mt-3">
-                            <span class="fa-li"><i class="fas fa-project-diagram text-primary"></i></span>
-                            <strong>Algorithm to classify message as spam or not spam</strong> | January 2021
-                            <br>
-                            Engineered a Natural Language Processing (NLP) algorithm to classify messages as spam or not spam, leveraging Python-based machine learning models. Key features include:
-                            <ul>
+                        </div>
+            
+                        <div class="project-card">
+                            <div class="project-header">
+                                <span class="project-icon"><i class="fas fa-project-diagram text-primary"></i></span>
+                                <div class="project-title">Algorithm to classify message as spam or not spam</div>
+                                <div class="project-date">January 2021</div>
+                            </div>
+                            <div class="project-description">
+                                Engineered an NLP algorithm to classify messages as spam or not spam, leveraging Python-based machine learning models.
+                            </div>
+                            <ul class="project-features">
                                 <li>Developed an optimized grid search pipeline using tokenization, TF-IDF transformation, and models like Logistic Regression and Naive Bayes.</li>
                                 <li>Achieved high prediction accuracy with cross-validation for robust performance.</li>
                             </ul>
-                        </li>
-                        <li class="mt-3">
-                            <span class="fa-li"><i class="fas fa-project-diagram text-primary"></i></span>
-                            <strong>System to recommend movies based on content</strong> | April 2020
-                            <br>
-                            Programmed a personalized movie recommender system utilizing the MovieLens dataset for a library of over 100k records. Key features include:
-                            <ul>
+                        </div>
+            
+                        <div class="project-card">
+                            <div class="project-header">
+                                <span class="project-icon"><i class="fas fa-project-diagram text-primary"></i></span>
+                                <div class="project-title">System to recommend movies based on content</div>
+                                <div class="project-date">April 2020</div>
+                            </div>
+                            <div class="project-description">
+                                Programmed a personalized movie recommender system utilizing the MovieLens dataset for a library of over 100k records.
+                            </div>
+                            <ul class="project-features">
                                 <li>Incorporated content-based learning techniques to suggest movies based on user-selected titles with a match percentage.</li>
-                                <li>Integrated keyword search functionality to refine recommendations using metadata like ratings and genre.</li>
+                                <li>Refined recommendations using metadata like ratings and genre.</li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
-            </section>            
+            </section>
+            
+            
+
             <hr class="m-0" />
             <!-- Interests-->
             <section class="resume-section" id="interests">
