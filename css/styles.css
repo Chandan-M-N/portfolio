@@ -11030,13 +11030,13 @@ section.resume-section .resume-section-content {
 }
 
 /* Hover effects for Concepts and Soft Skills */
-.concept-item:hover, .soft-skill-item:hover {
+.concept-item:hover, .soft-skill-item:hover, .framework-item:hover {
   transform: scale(1.05);
   background-color: #f3f3f3; /* Lighter hover color */
   box-shadow: none; /* Remove shadow for non-clickable items */
 }
 
-.concept-item, .soft-skill-item {
+.concept-item, .soft-skill-item, .framework-item {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
